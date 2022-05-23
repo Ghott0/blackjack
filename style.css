@@ -100,7 +100,7 @@ li {
     color: gold;
 }
 
-.header__desc {
+#header__desc {
     color: #c4c4c4;
     text-align: center;
     line-height: 1.25;

@@ -4,6 +4,7 @@ let firstCard = 11
 let secondCard = 10
 let hand = firstCard + secondCard
 let message = ""
+let messageEl
 
 function startGame() {
     if (hand === 21)  {
