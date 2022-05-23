@@ -45,6 +45,10 @@ i:hover {
     opacity: 0.7;
 }
 
+.page__title, .nav__link, .nav__link--anchor {
+    background-color: #222222;
+}
+
 .link__hover-effect:after {
     content: "";
     position: absolute;
@@ -136,5 +140,30 @@ nav {
     color: gold;
     margin: 0 12;
     font-weight: bold;
+}
+
+.game__stats, .game__stats--hand {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: #c4c4c4;
+}
+
+.start__button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: gold;
+    height: 32px;
+    width: 128px;
+    border-radius: 24px;
+    font-weight: bold;
+}
+
+.start__button:active {
+    transition: ease-in-out 150ms;
+    filter: brightness(60%);
 }
 
