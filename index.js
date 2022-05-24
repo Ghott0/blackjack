@@ -1,5 +1,5 @@
-let firstCard = 10
-let secondCard = 11
+let firstCard = 5
+let secondCard = 10
 let hand = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
@@ -24,5 +24,7 @@ function startGame() {
 }
 
 function newCard() {
-    console.log("new card")
+    let card = 6
+    hand += card
+    startGame()
 }
