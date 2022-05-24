@@ -1,27 +1,28 @@
-let isAlive = true
-let hasBlackJack = false
-let firstCard = 11
-let secondCard = 10
+let firstCard = 10
+let secondCard = 11
 let hand = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
 let message = ""
-let messageEl
+let messageEl = document.getElementById("message-el")
+let handEl = document.getElementById("hand-el")
+let cardsEl = document.querySelector(".game__stats")
 
 function startGame() {
-    if (hand === 21)  {
+    if (hand <= 20) {
+        message = "Would you like to draw a new card?"
+    } else if (hand === 21) {
         message = "Get in there! Blackjack!"
         hasBlackJack = true
-    }
-    
-    else if (hand > 21)  {
-        message = "No Mikey, no! Bust!"
+    } else {
+        message = "No mikey! No! Bust!"
         isAlive = false
     }
-    
-    else {
-        message = "Would you like to draw another card?"
-    }
-    
-    console.log(message)
+    cardsEl.textContent = "Cards: " + firstCard + ", " + secondCard
+    handEl.textContent = "Hand: " + hand
+    messageEl.textContent = message
 }
 
-
+function newCard() {
+    console.log("new card")
+}

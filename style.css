@@ -100,7 +100,7 @@ li {
     color: gold;
 }
 
-#header__desc {
+#message-el {
     color: #c4c4c4;
     text-align: center;
     line-height: 1.25;
@@ -149,7 +149,7 @@ nav {
     color: #c4c4c4;
 }
 
-.start__button {
+button {
     border: none;
     display: flex;
     justify-content: center;
@@ -162,8 +162,12 @@ nav {
     font-weight: bold;
 }
 
-.start__button:active {
+button:active {
     transition: ease-in-out 150ms;
     filter: brightness(60%);
+}
+
+.button__new {
+    margin-top: 8px;
 }
 
