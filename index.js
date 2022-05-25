@@ -31,5 +31,11 @@ function triggerGame() {
 function newCard() {
     let card = 6
     hand += card
+    cards.push(card)
+    console.log(cards)
     triggerGame()
+}
+
+for (let i = 10; i < 101; i += 10) {
+    console.log(i)
 }
